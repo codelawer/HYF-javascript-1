@@ -1,8 +1,14 @@
 #  Done according to the [janke-learning/variables-and-hoisting](http://bit.do/eNKNK)
 
+<h2>Index</h2>
+
+<p><a href ="#swaps">Swaps</p>
+ <p><a href ="#sentences">Sentences</p> 
+
+
 ## Exercises
 
-* challenges (**swaps**) <br>
+* challenges <span id="swaps">(**swaps**)</span><br>
 It can be done the number of lines and  different ways. 
 First of all assign a value to **extra holder variable(s)** in order to store that value inside that;
 After that starting from the first assignment it can be changed respectively. 
@@ -146,7 +152,7 @@ b=_;
 ```
 
 
-* challenges (**sentences**) <br>
+* challenges <span id="sentences">(**sentences**)</span> <br>
 
 1. without extra holder variables
 

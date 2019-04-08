@@ -8,7 +8,7 @@ First of all assign a variable to "underscore" in order to store that value insi
 After that starting from the first assignment it can be changed respectively. 
 And at the end assign the last one.
 
-1. [the first](http://bit.do/eNKEP)
+i. [the first](http://bit.do/eNKEP)
 ```js 
 let a = "b";
 let b = "a";
@@ -29,7 +29,7 @@ _=a;
 a=b;
 b=_;
 ```
-2. [the second](http://tinyurl.com/y63mdt8w)
+ii. [the second](http://tinyurl.com/y63mdt8w)
 
 ```js
 
@@ -70,7 +70,7 @@ b=_;
 
 ```
 
-3. [the third](http://tinyurl.com/y62lq6os)
+iii. [the third](http://tinyurl.com/y62lq6os)
 ```js 
 let a = "d", b = "a", c = "b", d = "c";
 let _ = ' ';
@@ -101,7 +101,7 @@ a=_;
 
 ```
 
-4. [the fourth](http://tinyurl.com/y6esaocj) 
+iv. [the fourth](http://tinyurl.com/y6esaocj) 
 ```js 
 
 let a = "z", b = "y", c = "x", d = "w";
@@ -128,7 +128,7 @@ a=_;
 
 ```
 
-5. [the fifth](http://tinyurl.com/y45x9w9m)
+v. [the fifth](http://tinyurl.com/y45x9w9m)
 
 ```js
 let a = "z", b = "y", c = "x", d = "w", e = "v";
@@ -144,3 +144,8 @@ d=b;
 b=_;
 
 ```
+
+
+* challenges (**sentences**) <br>
+
+i. [the first]()

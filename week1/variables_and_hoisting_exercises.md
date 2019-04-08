@@ -4,7 +4,7 @@
 
 * challenges (**swaps**) <br>
 It can be done the number of lines and  different ways. 
-First of all assign a variable to "underscore" in order to store that value inside that;
+First of all assign a value to **extra holder variable(s)** in order to store that value inside that;
 After that starting from the first assignment it can be changed respectively. 
 And at the end assign the last one.
 
@@ -171,3 +171,167 @@ _1="m";_3=" "; _4=" ";_5=" ";
 
 ```
 
+b. [eating meat every meal](http://tinyurl.com/yyrg2bcc)
+
+```js
+// eating meat every meal
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
+
+// -- you write this --
+
+// eating
+_1="e", _2="a", _3="t", _4="i", _5="n", _6="g"
+// meat
+_1="m",_2="e", _3="a",_4="t", _5=" "; _6=" ";
+// every
+_1="e", _2="v", _3=_1, _4="r", _5="y";
+// meal
+_1="m", _2=_3, _3="a", _4="l", _5=" ";
+
+```
+
+c. [many men may melt my mind](http://tinyurl.com/y5qf6z38)
+
+```js 
+// many men may melt my mind
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
+
+// -- you write this --
+
+// many
+_1="m", _2="a", _3="n", _4="y";
+// men
+_2="e", _4=" ";
+// may
+_2="a", _3="y";
+// melt
+_2="e",_3="l", _4="t";
+// my
+_2="y", _3=" ", _4=" ",
+// mind
+
+_2="i", _3="n", _4="d";
+```
+
+d.[if fir trees ever fall](http://tinyurl.com/y4zm689e)
+```js
+
+// if fir trees ever fall
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+
+// -- you write this --
+
+// if
+_1="i", _2="f";
+// fir
+_1=_2, _2="i", _3="r";
+// trees
+_1="t", _2=_3, _3="e", _4=_3, _5="s";
+// ever
+_1=_3, _2="v", _4="r", _5=" ";
+// fall
+_1="f", _2="a", _3="l", _4=_3;
+
+```
+
+2. with extra holder variables
+
+a. [the toad reads me](http://tinyurl.com/y2l8gart)
+
+```js
+
+
+// we give you this
+let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
+let x = ' ', y = ' ';
+
+// -- I wrote this --
+
+// the
+_1="t", _2="h", _3="e";
+// toad
+_2="o", x=_3, _3="a", _4="d";
+// reads
+_1="r", _2=x, _5="s";
+// me
+_1="m", _3=" ", _4=" " , _5= " ";
+```
+
+b. [eating meat every meal](http://tinyurl.com/y4yd5qyv)
+
+```js
+
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
+let x = ' ', y = ' ';
+
+// -- I wrote this --
+
+// eating
+_1="e", _2="a", _3="t", _4="i", _5="n", _6="g";
+// meat
+x=_1, y=_2, _1="m", _2=x, _3=y, _4="t", _5=" ", _6=" ";
+
+// every
+_1=x,_2="v", _3=x, _4="r", _5="y";
+
+// meal
+_1="m", _2=x, _3=y, _4="l", _5=" ";
+```
+
+c. [ many men may melt my mind](http://tinyurl.com/y5rkrk68)
+```js
+
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
+let x, y;
+// -- I wrote this --
+
+// many
+_1="m", _2="a", _3="n", _4="y";
+// men
+x=_2, y=_4;
+_2="e", _4=" "; 
+// may
+_2= x, _3=y;
+// melt
+_2="e", _3="l", _4="t";
+
+// my
+_2=y, _3=" ", _4= " ";
+// mind
+_2="i", _3="n", _4="d";
+```
+
+d. [if fir trees ever fall](http://tinyurl.com/yxvaubwv)
+```js
+
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+let x = ' ', y = ' '; // to save extra values for later
+
+// -- I wrote this --
+
+// if
+_1="i", _2="f";
+// fir
+x=_1;
+_1=_2, _2=x, _3="r";
+// trees
+x=_1;
+_1="t", _2=_3, _3="e", _4=_3, _5="s";
+// ever
+y=_3;
+_1=_3, _2="v",_3=y, _4="r", _5=" ";
+// fall
+_1=x, _2="a", _3="l", _4="l";
+```

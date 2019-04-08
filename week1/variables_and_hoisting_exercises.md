@@ -148,7 +148,7 @@ b=_;
 
 * challenges (**sentences**) <br>
 
-** without extra holder variables
+1. without extra holder variables
 
 a. [the toad reads me](http://tinyurl.com/yxdza46u)
 

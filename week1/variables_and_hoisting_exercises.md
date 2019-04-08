@@ -8,7 +8,7 @@
 
 ## Exercises
 
-* challenges <span id="swaps">(**swaps**)</span><br>
+* challenges <span id="swaps">(**SWAPS**)</span><br>
 It can be done the number of lines and  different ways. 
 First of all assign a value to **extra holder variable(s)** in order to store that value inside that;
 After that starting from the first assignment it can be changed respectively. 
@@ -152,7 +152,7 @@ b=_;
 ```
 <p><a href="#top">TOP</p><br>
 
-* challenges <span id="sentences">(**sentences**)</span> <br>
+* challenges <span id="sentences">(**SENTENCES**)</span> 
 
 1. without extra holder variables
 

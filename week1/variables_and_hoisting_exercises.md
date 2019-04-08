@@ -150,7 +150,7 @@ d=b;
 b=_;
 
 ```
-<p><a href="#top">TOP</p><br>
+<p><a href="#top">TOP</a></p><br>
 
 * challenges <span id="sentences">(**SENTENCES**)</span> 
 
@@ -245,7 +245,7 @@ _1=_3, _2="v", _4="r", _5=" ";
 _1="f", _2="a", _3="l", _4=_3;
 
 ```
-<p><a href="#top">TOP</p><br>
+<p><a href="#top">TOP</a></p><br>
  
 2. with extra holder variables
 

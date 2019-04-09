@@ -1,4 +1,4 @@
-# Done according to the [janke-learning-errors](https://github.com/janke-learning/errors)
+# <span id="errors"></span>Done according to the [janke-learning-errors](https://github.com/janke-learning/errors)
 
 
 ## Exercises

@@ -40,6 +40,7 @@ var = 5;
 ```
 error message:
 ```js
+Uncaught SyntaxError: Unexpected token =
 ```
 classification:
 * creation phase or execution phase ?
@@ -47,6 +48,7 @@ classification:
 
 the fix:
 ```js
+var a = 5;
 ```
 your notes:
 
@@ -62,6 +64,7 @@ let b = a.b.3
 ```
 error message:
 ```
+Uncaught SyntaxError: Unexpected number
 ```
 classification:
 * creation phase or execution phase ?
@@ -69,8 +72,13 @@ classification:
 
 the fix:
 ```js
+
+????
+
+let a = {b:3};
+let b = a.b;
 ```
-your notes:
+your notes: I don't understand what is the meaning of the `:`, `.`
 
 [TOP](#errors)
 
@@ -83,6 +91,7 @@ let y = b.e;
 ```
 error message:
 ```
+ReferenceError: b is not defined
 ```
 classification:
 * creation phase or execution phase ?
@@ -104,6 +113,8 @@ two lines';
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL
+
 ```
 classification:
 * creation phase or execution phase ?
@@ -111,6 +122,7 @@ classification:
 
 the fix:
 ```js
+let a = 'this is\n two lines';
 ```
 your notes:
 
@@ -124,6 +136,8 @@ let a = 1:
 ```
 error message:
 ```
+SyntaxError: Unexpected token :
+
 ```
 classification:
 * creation phase or execution phase ?
@@ -131,6 +145,7 @@ classification:
 
 the fix:
 ```js
+let a = 1;
 ```
 your notes:
 
@@ -144,6 +159,8 @@ let myArray = [1, 2, 3;
 ```
 error message:
 ```
+SyntaxError: Unexpected token ;
+
 ```
 classification:
 * creation phase or execution phase ?
@@ -151,6 +168,7 @@ classification:
 
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
 your notes:
 
@@ -169,6 +187,7 @@ let result = getNine();
 ```
 error message:
 ```
+SyntaxError: Unexpected token {
 ```
 classification:
 * creation phase or execution phase ?
@@ -176,8 +195,14 @@ classification:
 
 the fix:
 ```js
+function getNine () {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+let result = getNine();
 ```
-your notes:
+your notes: added `()` brackets before `{}` curly brackets.
 
 [TOP](#errors)
 
@@ -189,6 +214,8 @@ let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL
+
 ```
 classification:
 * creation phase or execution phase ?
@@ -196,8 +223,10 @@ classification:
 
 the fix:
 ```js
+let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
+
 ```
-your notes:
+your notes: set a \ before you escape
 
 [TOP](#errors)
 
@@ -209,6 +238,8 @@ let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
 ```
+SyntaxError: Unexpected string
+
 ```
 classification:
 * creation phase or execution phase ?
@@ -216,6 +247,12 @@ classification:
 
 the fix:
 ```js
+let nested_messages = 'remind yourself \'i can do this!\' at least once a day';
+
+or 
+
+let nested_messages = 'remind yourself "i can do this!" at least once a day';
+
 ```
 your notes:
 
@@ -230,15 +267,18 @@ a = 0;
 ```
 error message:
 ```
+TypeError: Assignment to constant variable.
+
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* **creation phase** or execution phase ?
+* syntax or **semanitc** ?
 
 the fix:
 ```js
+const a = 9;
 ```
-your notes:
+your notes: `const` can not be reassigned.
 
 [TOP](#errors)
 
@@ -251,15 +291,18 @@ a = 0;
 ```
 error message:
 ```
+SyntaxError: Missing initializer in const declaration
+
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* **creation phase** or execution phase ?
+* syntax or **semanitc** ?
 
 the fix:
 ```js
+const a=0;
 ```
-your notes:
+your notes: const value should assigned initial. because it can not be changable later on.
 
 [TOP](#errors)
 
@@ -272,15 +315,19 @@ array.length()
 ```
 error message:
 ```
+TypeError: array.length is not a function
+
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* **creation phase** or execution phase ?
+* **syntax** or semanitc ?
 
 the fix:
 ```js
+let array = [];
+array.length;
 ```
-your notes:
+your notes: array is not defined a function. the bracket at the end of the length should be deleted.
 
 
 

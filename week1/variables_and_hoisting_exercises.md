@@ -177,24 +177,26 @@ _1="m";_3=" "; _4=" ";_5=" ";
 
 ```
 
-b. [eating meat every meal](http://tinyurl.com/yyrg2bcc)
+b. [eating meat every meal](http://tinyurl.com/y63qc86k)
 
 ```js
-// eating meat every meal
-
 // we give you this
 let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
 
-// -- you write this --
+// -- I wrote this --
 
 // eating
 _1="e", _2="a", _3="t", _4="i", _5="n", _6="g"
+
 // meat
-_1="m",_2="e", _3="a",_4="t", _5=" "; _6=" ";
+_4=_3, _3=_2, _2=_1, _1="m", _5=" ", _6=" ";
+
 // every
-_1="e", _2="v", _3=_1, _4="r", _5="y";
+_1=_2, _2="v", _3=_1, _4="r", _5="y"; 
+
 // meal
-_1="m", _2=_3, _3="a", _4="l", _5=" ";
+_2=_1, _1="m", _3="a", _4="l", _5=" ";
+
 
 ```
 

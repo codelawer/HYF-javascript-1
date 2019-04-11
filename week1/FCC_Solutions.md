@@ -361,26 +361,38 @@ testSize(7);
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
   // Only change code below this line
-  if (strokes == 1){
+  
+  if(strokes==1){
     return "Hole-in-one!";
-  } else if (strokes <= par -2){
-    return "Eagle";
-  } else if (strokes == par -1) {
-    return "Birdie";
-  } else if (strokes == par) {
-    return "Par";
-  } else if (strokes == par +1) {
-    return "Bogey";
-  } else if (strokes == par +2) {
-    return "Double Bogey";
-  } else {
-    return "Go Home!";
   }
+  else if (strokes<=par-2){
+    return "Eagle";
+  }
+  else if(strokes==par-1){
+    return names[2];
+  }
+  else if(strokes==par){
+    return names[3];
+  }
+  else if (strokes == par + 1){
+    return names[4];
+  }
+ else if (strokes == par + 2){
+    return names[5];
+  }
+  else if (strokes >= par +3){
+    return names [6]
+  }
+  else {
+    return "nothing to do"
+  }
+  
+
   // Only change code above this line
 }
-// Change these values to test
-golfScore(4, 1);
 
+// Change these values to test
+golfScore(5, 4);
 ```
 <a href="#top">TOP</a>
 

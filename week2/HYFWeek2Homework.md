@@ -23,7 +23,6 @@ console.log('I'm awesome');
 
 Copy the code in your `.js` file and run it. You will see that you will get a SyntaxError. Find a solution for this error. Hint: read the error message carefully, it also gives an indication of where the problem is.
 
-* **Solution**
 
   * **Error message** 
 ```js 
@@ -36,6 +35,7 @@ console.log('I\'m awesome');
 
 ## Task 3
 
+* **_Instruction_**
 > 3\. Declare a variable `x` and initialize it with an integer, using these exact steps:  
 3\.1 First, _declare_ your variable `x` (do not initialize it yet).  
 3\.2 Add a `console.log` statement that explains in words what _you think_ the value of `x` is, like in this example:
@@ -45,5 +45,16 @@ console.log('I\'m awesome');
 3\.6 Add a `console.log` statement that logs the value of `x`.  
  
  * **Solution**
+ ```js 
+ let x;
+ console.log("the value of the x: for now \"undefined\"");
+ console.log(x); // undefined
+ x = 10;
+ console.log("the value of my x after assignment is: " + x); // the value of my x after assignment is: 10
+ console.log(x); // 10
  
+ ```
+ [TOP]()
  
+ ## Task 4
+* **_Instruction_**

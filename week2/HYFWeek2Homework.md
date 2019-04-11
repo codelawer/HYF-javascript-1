@@ -10,7 +10,7 @@ console.log("Merhaba, Dünya") // Turkish
 console.log("Bonjour le monde!") // French
 console.log("Hallo wereld!")// Dutch
 ```
-Notes:  ```for more information see that [webpage](www.webucator.com/blog/2010/03/saying-hello-world-in-your-language-using-javascript/)```
+Notes:  ```for more information see that``` [webpage](www.webucator.com/blog/2010/03/saying-hello-world-in-your-language-using-javascript/)
 
 ## Task 2
 * **Instruction** 
@@ -54,7 +54,7 @@ console.log('I\'m awesome');
  console.log(x); // 10
  
  ```
- [TOP]()
+ [TOP](#Done)
  
  ## Task 4
 * **_Instruction_**

@@ -1,7 +1,8 @@
 # <span id="Done"></span>Done according to the instructions at [HYF-JS1-Week2_Homework](https://github.com/HackYourFuture/JavaScript1/blob/master/Week2/MAKEME.md)
 
 ## Task 1
-* Instruction 
+
+* **_Instruction_** 
 1. Write a `console.log` statement saying "Hello World!" for each language that you know.
 
 * **Solution**
@@ -14,7 +15,8 @@ Notes:  ```for more information see that``` [webpage](https://www.webucator.com/
 
 
 ## Task 2
-* **Instruction** 
+
+* **_Instruction_** 
 
 > 2\. Consider the following code:
 

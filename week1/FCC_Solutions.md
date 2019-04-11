@@ -394,6 +394,9 @@ function golfScore(par, strokes) {
 // Change these values to test
 golfScore(5, 4);
 ```
+
+* Comments: ```In order to understand what the par and stroke mean I watched this video : [The Rules of Golf - EXPLAINED!](https://www.youtube.com/watch?v=IcaFTHeVQ7w&t=175s)```
+  
 <a href="#top">TOP</a>
 
 ### 

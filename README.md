@@ -3,9 +3,9 @@
 ### Index
 
  * Week 1
-    * [FCC_Solutions.md](./week1/FCC_Solutions.md)
-    * [errors exercises.md](./week1/errors_exercises.md)
-    * [variables_and_hoisting_exercises.md](./week1/variables_and_hoisting_exercises.md)
+    * [Free Code Camp Solutions](./week1/FCC_Solutions.md)
+    * [errors exercises](./week1/errors_exercises.md)
+    * [variables and hoisting exercises](./week1/variables_and_hoisting_exercises.md)
     
  * Week 2
-    * [HYFWeek2Homework.md](./week2/HYFWeek2Homework.md)
+    * [HackYourFuture Week2 Homework](./week2/HYFWeek2Homework.md)

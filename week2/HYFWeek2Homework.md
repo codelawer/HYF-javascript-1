@@ -1,6 +1,6 @@
 # Done according to the instructions at [HYF-JS1-Week2_Homework](https://github.com/HackYourFuture/JavaScript1/blob/master/Week2/MAKEME.md)
 
-1. *Task 1*
+ **Task 1**
 ### Instruction 
 1. Write a `console.log` statement saying "Hello World!" for each language that you know.
 
@@ -10,9 +10,9 @@ console.log("Merhaba, Dünya") // Turkish
 console.log("Bonjour le monde!") // French
 console.log("Hallo wereld!")// Dutch
 ```
-Notes:  `for more information see that [webpage](https://www.webucator.com/blog/2010/03/saying-hello-world-in-your-language-using-javascript/)
+Notes:  `for more information see that [webpage](https://www.webucator.com/blog/2010/03/saying-hello-world-in-your-language-using-javascript/)`
 
-1. *Task 2*  
+ **Task 2**
 ### Instruction 
 
 > 2\. Consider the following code:

@@ -1,4 +1,4 @@
-# Done according to the instructions at [HYF-JS1-Week2_Homework](https://github.com/HackYourFuture/JavaScript1/blob/master/Week2/MAKEME.md)
+# <span id="Done"></span>Done according to the instructions at [HYF-JS1-Week2_Homework](https://github.com/HackYourFuture/JavaScript1/blob/master/Week2/MAKEME.md)
 
 ## Task 1
 * Instruction 
@@ -11,6 +11,7 @@ console.log("Bonjour le monde!") // French
 console.log("Hallo wereld!")// Dutch
 ```
 Notes:  ```for more information see that``` [webpage](https://www.webucator.com/blog/2010/03/saying-hello-world-in-your-language-using-javascript/)
+
 
 ## Task 2
 * **Instruction** 
@@ -32,7 +33,8 @@ Uncaught SyntaxError: missing ) after argument list
 ```js
 console.log('I\'m awesome'); 
 ```
-
+  * [TOP](#Done)
+ 
 ## Task 3
 
 * **_Instruction_**
@@ -54,7 +56,7 @@ console.log('I\'m awesome');
  console.log(x); // 10
  
  ```
- [TOP](#Done according to the instructions at [HYF-JS1-Week2_Homework])
+  * [TOP](#Done)
  
  ## Task 4
 * **_Instruction_**

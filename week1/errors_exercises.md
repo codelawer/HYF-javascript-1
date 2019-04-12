@@ -210,7 +210,7 @@ your notes: added `()` brackets before `{}` curly brackets.
 ## improper nested quotes 1
 broken code:
 ```js
-let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
+let innerHtml = "<p>Click here to <a href=#Home>return home</a></p>";
 ```
 error message:
 ```

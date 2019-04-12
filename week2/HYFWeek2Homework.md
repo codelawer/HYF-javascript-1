@@ -170,35 +170,35 @@ console.log(myString.length); // 14
 * **Solution**
  
 
- 8\.1 First declare at least four variables and assign them different data types.  
+> 8\.1 First declare at least four variables and assign them different data types.  
  ```js
 let a = 10;
 let b = "trial";
 let c; // undefined
 let d = true;
 ```
-8\.2 For each variable write a `console.log` statement that logs the value
+> 8\.2 For each variable write a `console.log` statement that logs the value
  ```js
 console.log("the value of my variable a is: " + a) //the value of my variable a is: 10
 console.log("the value of my variable a is: " +b) // the value of my variable a is: trial
 console.log("the value of my variable a is: " +c) // the value of my variable a is: undefined
 console.log("the value of my variable a is: " +d) // the value of my variable a is: true
 ```
-8\.3 Now write a `console.log` statement wherein you first explain in words what you think the _type_ of your variables is.  
+> 8\.3 Now write a `console.log` statement wherein you first explain in words what you think the _type_ of your variables is.  
  ```js
 console.log("the typof my variable a is: 'number'") //the typof my variable a is: 'number'
 console.log("the typof my variable a is: 'string'") // the typof my variable a is: 'string'
 console.log("the typof my variable a is: 'undefined'") // the typof my variable a is: 'undefined'
 console.log("the typof my variable a is: 'boolean'") // the typof my variable a is: 'boolean'
 ```
-8\.4 Now use `typeof` to log the actual _type_ of your variables.  
+> 8\.4 Now use `typeof` to log the actual _type_ of your variables.  
  ```js
 console.log(typeof a); // number
 console.log(typeof b); // string
 console.log(typeof c); // undefined
 console.log(typeof d); // boolean
 ```
-8\.5 Now compare the types of your different variables with one another.  
+> 8\.5 Now compare the types of your different variables with one another.  
 8\.6 Make sure to also show a message when the variables you are comparing are not the same type.
  ```js
  if (typeof a == typeof b || typeof b == typeof c || typeof c == typeof d){

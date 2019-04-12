@@ -236,21 +236,45 @@ console.log(typeof d); // boolean
 * **_Instruction_**
 
 > 10\. Write a program to answer the following questions:  
-10\.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.  
-10\.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?  
-10\.3 Add `console.log` statements to the above program in which you show that you understand the concepts (just like you've done in the above assignments).
+
+
 
 * **Solution**
-  ```js 
+ > 10\.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.  
+ 
+ ```js 
   let myArray = ["string", 10, true, undefined, null, "10",]
   console.log(typeof myArray); // object
+ 
+   ```
+> 10\.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?  
+10\.3 Add `console.log` statements to the above program in which you show that you understand the concepts (just like you've done in the above assignments).
+   ```js 
+  let a = 6 / 0;
+  let b = 10 / 0;
   if (a == b){
   console.log("Yes, infinities can be compared")
   }
   else {
     console.log("No. infinities CAN NOT be comparable")
     } // Yes, infinities can be compared
-  ```
+   ```
+  **_Other Example_** : if you divide 0 to 0 it will equal to NaN. And NaN CAN'T be comparable. 
+  
+  
+```js 
+let a = 0 / 0; // NaN
+let b = 0 / 0; // NaN
+
+if (a == b){
+  console.log("Yes, NaN can be compared")
+  }
+  else {
+    console.log("No. NaN CAN NOT be comparable")
+    }
+    // No. NaN CAN NOT be comparable
+```
+
   
 [TOP](#Done)
  

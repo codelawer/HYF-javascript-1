@@ -125,6 +125,123 @@ console.log(y); // something
 * **Solution**
  
  ```js 
- 
+ let myArray = []; 
+console.log("the value of \"myArray\" is: " +  myArray); // the value of "myArray" is: []
+console.log(myArray); // []
+let myFavoriteAnimals = ["dog", "cat", "crocodile", "elephant", "lion"]; 
+console.log(myFavoriteAnimals); // [ 'dog', 'cat', 'crocodile', 'elephant', 'lion' ]
+myFavoriteAnimals.push("baby pig"); 
+console.log(myFavoriteAnimals); // [ 'dog', 'cat', 'crocodile', 'elephant', 'lion', 'baby pig' ]
+console.log("Daan's favorite animal is: " + myFavoriteAnimals[5]); // Daan's favorite animal is: baby pig
  ```
 [TOP](#Done)
+
+## Task 7
+
+
+* **_Instruction_**
+> 7\. _More strings_  
+Let's consider the following string: `let myString = "this is a test"`.  
+7\.1 Add the string to your file and console.log it.  
+7\.2 Find a way to get the length of `myString`.  
+7\.3 `console.log` the length of `myString`.
+
+* **Solution**
+ 
+ ```js 
+let myString = "this is a test"; 
+console.log(myString);  // this is a test 
+console.log(myString.length); // 14
+ ``` 
+ [TOP](#Done)
+
+## Task 8
+
+* **_Instruction_**
+
+> 8\. Write a program that checks the types of two variables and prints out `SAME TYPE` if they are the same type.  
+8\.1 First declare at least four variables and assign them different data types.  
+8\.2 For each variable write a `console.log` statement that logs the value
+8\.3 Now write a `console.log` statement wherein you first explain in words what you think the _type_ of your variables is.  
+8\.4 Now use `typeof` to log the actual _type_ of your variables.  
+8\.5 Now compare the types of your different variables with one another.  
+8\.6 Make sure to also show a message when the variables you are comparing are not the same type.
+
+* **Solution**
+ 
+
+ 8\.1 First declare at least four variables and assign them different data types.  
+ ```js
+let a = 10;
+let b = "trial";
+let c; // undefined
+let d = true;
+```
+8\.2 For each variable write a `console.log` statement that logs the value
+ ```js
+console.log("the value of my variable a is: " + a) //the value of my variable a is: 10
+console.log("the value of my variable a is: " +b) // the value of my variable a is: trial
+console.log("the value of my variable a is: " +c) // the value of my variable a is: undefined
+console.log("the value of my variable a is: " +d) // the value of my variable a is: true
+```
+8\.3 Now write a `console.log` statement wherein you first explain in words what you think the _type_ of your variables is.  
+ ```js
+console.log("the typof my variable a is: 'number'") //the typof my variable a is: 'number'
+console.log("the typof my variable a is: 'string'") // the typof my variable a is: 'string'
+console.log("the typof my variable a is: 'undefined'") // the typof my variable a is: 'undefined'
+console.log("the typof my variable a is: 'boolean'") // the typof my variable a is: 'boolean'
+```
+8\.4 Now use `typeof` to log the actual _type_ of your variables.  
+ ```js
+console.log(typeof a); // number
+console.log(typeof b); // string
+console.log(typeof c); // undefined
+console.log(typeof d); // boolean
+```
+8\.5 Now compare the types of your different variables with one another.  
+8\.6 Make sure to also show a message when the variables you are comparing are not the same type.
+ ```js
+ if (typeof a == typeof b || typeof b == typeof c || typeof c == typeof d){
+     console.log("These are the SAME TYPE")
+} else {
+     console.log("These AREN'T SAME TYPE")
+}  // These AREN'T SAME TYPE
+ 
+ ```
+ 
+[TOP](#Done)
+  
+  ## Task 9
+
+* **_Instruction_**
+
+9\. If `x` equals 7, and the only other statement is `x = x % 3`, what would be the new value of `x`?  
+9\.1 Add at least 3 `console.log` statements in which you show that you understand what `%` does.
+
+* **Solution**
+  ```js 
+  let x = 7; 
+  x = x % 3; // 1 
+  
+  console.log(x = x % 1) // 0
+  console.log(x = x % 4) // 3
+  console.log(x = x % 5) // 2
+   ``` 
+  `Notes: ` _**This is a remainder assignment. It shows the remainder after the division of the given value._**
+  
+[TOP](#Done)
+
+## Task 10
+
+* **_Instruction_**
+
+10\. Write a program to answer the following questions:  
+10\.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.  
+10\.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?  
+10\.3 Add `console.log` statements to the above program in which you show that you understand the concepts (just like you've done in the above assignments).
+
+* **Solution**
+  
+  
+[TOP](#Done)
+ 

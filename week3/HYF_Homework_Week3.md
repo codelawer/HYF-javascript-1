@@ -1,4 +1,6 @@
+# Week3
 
+# Done according to [HackYourFuture/JavaScript1](https://github.com/HackYourFuture/JavaScript1/blob/master/Week3/MAKEME.md)
 
 ## More JavaScript :tada:
 
@@ -24,6 +26,7 @@ sum(1,2,3);
 ```
   * [phytut](http://tinyurl.com/yxsj6xtv)
 
+[TOP](#Week3)
 > 2. Create a function named `colorCar` that receives a color, and prints out, _'a red car'_ for example.
 
 ```js
@@ -51,6 +54,8 @@ colorCar("blue");
 
   * [pytut](http://tinyurl.com/y2ygtu3w)
 
+[TOP](#Week3)
+
 > 5. Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
 
    ```js
@@ -62,3 +67,5 @@ colorCar("blue");
    ```
    
   * [pytut](http://tinyurl.com/y57z89ld) 
+
+[TOP](#Week3)

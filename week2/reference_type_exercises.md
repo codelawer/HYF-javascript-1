@@ -129,6 +129,19 @@ let _ = null;
 
 ```
 
+  * **codelawer's solution** [pytut](http://tinyurl.com/yxv5qg3x)
+```js 
+let obj = [];
+let arr = {};
+let _ = null;
+
+// codelawer's Solution
+
+_ = obj;
+obj= arr;
+arr=_;
+
+```
 __Complete this code__  
 [(read this first)](https://github.com/janke-learning/reference-vs-value)  
 [on pytut](http://www.pythontutor.com/javascript.html#code=%20%20let%20value_1%20%3D%205%3B%0A%20%20let%20reference_1%20%3D%20%5B%5D%3B%0A%0A%20%20let%20value_2%20%3D%20value_1%3B%0A%20%20console.assert%28value_2%20/*%20%3D%3D%3D%20or%20!%3D%3D%20%3F%20*/%20value_1%29%3B%0A%0A%20%20let%20reference_2%20%3D%20reference_1%3B%0A%20%20console.assert%28reference_2%20/*%20%3D%3D%3D%20or%20!%3D%3D%20%3F%20*/%20reference_1%29%3B%0A%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20console.assert%28value_1%20!%3D%3D%20value_2%29%3B%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20console.assert%28reference_1%5B0%5D%20%3D%3D%3D%20reference_2%5B0%5D%29%3B%0A%0A%20%20//%20remove%20the%20array%20from%20memory%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%20%20%3B%20//%20write%20this%20line&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)

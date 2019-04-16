@@ -566,4 +566,4 @@ console.assert(read_obj_1 ===  read_obj_2);
 
 ___
 ___
-### <a href="https://github.com/codelawer" target="_blank"><img src="http://tinyurl.com/y5a3eyoo" width="60" height="40"></img> Code Lawer</a>
+### <a href="https://github.com/codelawer" target="_blank"><img src="http://tinyurl.com/y5a3eyoo" width="60" height="40"></img> codeLawer</a>

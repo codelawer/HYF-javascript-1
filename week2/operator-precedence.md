@@ -1,4 +1,4 @@
-# Operator Precedence
+# Operator_Precedence
  * Done according to the [janke learning - operator precedence](https://github.com/janke-learning/operator-precedence)
  
 you'll be presented with a single line expression.  your task is to break it into steps according to operator precedence.  The main objective for these exercises is that you become comfortable stepping through and working with complex JS expressions, not that your learn everything about how all operators work.  Understanding implicit coercion is very important but will be covered in depth later on.  
@@ -11,7 +11,8 @@ you'll be presented with a single line expression.  your task is to break it int
   * [logical operators](#logical-operators)
   * [arithmetic operators](#arithmetic-operators)
   * [all primitive operators](#all-primitive-operators)
-* [resources](#resources)
+  * [resources](#resources)
+   * [My resources](#my resources)
 
 ---
 
@@ -47,6 +48,31 @@ you'll be presented with a single line expression.  your task is to break it int
 }
 ```
 
+   * **codelawer's solution** [pytut](http://tinyurl.com/y2wljste)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1, b = 1 ;
+
+const expected = typeof a === typeof b;
+
+const val_1 = typeof a;
+const step_1 = val_1 == typeof b;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = typeof b ;
+const step_2 = val_2 == val_1;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_1 == val_2;
+const step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ### types & casting 2
 
 
@@ -75,7 +101,30 @@ you'll be presented with a single line expression.  your task is to break it int
   console.assert(step_3 === expected, "step_3"); 
 }
 ```
+   * **codelawer's solution** [pytut](http://tinyurl.com/y4t7rq5f)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1, b =0;
 
+const expected = Boolean(a) !== Boolean(b);
+
+const val_1 = Boolean(a);
+const step_1 = val_1 !== Boolean(b);
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = Boolean (b) ;
+const step_2 = val_1 !== val_2;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_1 !== val_2;
+const step_3 = val_3 ;
+console.assert(step_3 === expected, "step_3");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
 ## types & casting 3
 
 
@@ -109,9 +158,34 @@ you'll be presented with a single line expression.  your task is to break it int
 }
 ```
 
-[TOP](#operator-precedence)
+   * **codelawer's solution** [pytut](http://tinyurl.com/yy2gocvr)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = "", b ="" ;
 
----
+const expected = Boolean(b) === Boolean(Number(a));
+
+const val_1 = (Number(a));
+const step_1 = Boolean(val_1) == Boolean(b);
+console.assert(step_1 === expected, "step_1");
+
+const val_2 =Boolean(val_1) ;
+const step_2 =val_2 == Boolean(b) ;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = Boolean(b);
+const step_3 = val_3 == val_2;
+console.assert(step_3 === expected, "step_3");
+
+const val_4 = val_2 == val_3 ;
+const step_4 = val_4;
+console.assert(step_4 === expected, "step_4");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
 
 ## Logical Operators
 
@@ -143,7 +217,31 @@ you'll be presented with a single line expression.  your task is to break it int
   console.assert(step_3 === expected, "step_3"); 
 }
 ```
+   * **codelawer's solution** [pytut](http://tinyurl.com/yyx8qc4u)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = "", b = "" ;
 
+const expected = !(a && !b);
+
+const val_1 = !b ;
+const step_1 = val_1 == !a
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = !a ;
+const step_2 = val_1 == val_2  ;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_1 == val_2;
+const step_3 = val_3 ;
+console.assert(step_3 === expected, "step_3");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ### logical operators 2
 
 
@@ -180,7 +278,39 @@ you'll be presented with a single line expression.  your task is to break it int
   console.assert(step_5 === expected, "step_5"); 
 }
 ```
+   * **codelawer's solution** [pytut](http://tinyurl.com/y3lyakbf)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 0, b = 1;
 
+const expected = !!a || !!b;
+
+const val_1 = !!a;
+const step_1 = val_1 !== !!b;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = val_1;
+const step_2 = val_2 !== !!b;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = !!b;
+const step_3 = val_3 !== val_1;
+console.assert(step_3 === expected, "step_3"); 
+
+const val_4 = val_3;
+const step_4 = val_4 !== val_1;
+console.assert(step_4 === expected, "step_4");
+
+const val_5 = val_4 !== val_1;
+const step_5 = val_5;
+console.assert(step_5 === expected, "step_5");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ### logical operators 3
 
 
@@ -205,7 +335,40 @@ you'll be presented with a single line expression.  your task is to break it int
 [TOP](#operator-precedence)
 
 ---
+   * **codelawer's solution** [pytut](http://tinyurl.com/y4mb49xv)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a =0 , b = 1, c = 1;
 
+const expected = a || b && c || a;
+
+// break down this expression
+
+const val_1 = b;
+const step_1 = val_1 && c || a;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = c; 
+const step_2 = val_2 && b || a;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = a || val_1 && val_2 || a;
+const step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
+
+const val_4 = val_3;
+const step_4 = val_3;
+console.assert(step_4 === expected, "step_4");
+   ```
+   
+
+
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ## Arithmetic Operators
 
 ### arithmetic operators 1
@@ -238,7 +401,32 @@ console.assert(step_3 === expected, "step_3");
 ```
 [scientific notation](http://www.java2s.com/Tutorials/Javascript/Javascript_Tutorial/Data_Type/How_to_write_Scientific_notation_literal_in_Javascript.htm)
 
-### arithmetic operators 2
+   * **codelawer's solution** [pytut](http://tinyurl.com/yylabgnv)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+*/
+const a = 1, b =2 , c =3 ;
+
+const expected = -(a + b) * c;
+
+const val_1 = -(a+b) ;
+const step_1 = val_1 * c;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = c;
+const step_2 = val_1 *val_2;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_1 *val_2;
+const step_3 =val_3 ;
+console.assert(step_3 === expected, "step_3");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
+### arithmetic operators 2 (exponentiation operator **)
 
 
 [on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%200,%201,%20-1,%20NaN,%20Infinity,%20.5,%20-0.0,%201e3,%201e-3,%20999e305,%20999e306%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20,%20c%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20a%20**%20b%20/%20%2Bc%3B%0A%0A//%20break%20down%20this%20expression%20&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
@@ -256,7 +444,38 @@ console.assert(step_3 === expected, "step_3");
   // break down this expression 
 }
 ```
+   * **codelawer's solution** [pytut](http://tinyurl.com/y27fl3yx)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+*/
+const a = 2, b =3 , c =-4 ;
 
+const expected = a ** b / +c;
+
+// break down this expression
+val_1= a;
+step_1 = val_1 ** b / +c;
+console.assert(step_1 === expected, "step_1");
+
+val_2 = b;
+step_2= val_1 ** val_2 / +c;
+console.assert(step_2 === expected, "step_2");
+
+val_3 = c;
+step_3 = val_1 ** val_2 / +val_3;
+console.assert(step_3 === expected, "step_3");
+
+val_4 = val_1 ** val_2 / +val_3;
+step_4= val_4;
+console.assert(step_4 === expected, "step_4");
+
+
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ### arithmetic operators 3
 
 
@@ -276,9 +495,36 @@ console.assert(step_3 === expected, "step_3");
 }
 ```
 
-[TOP](#operator-precedence)
+   * **codelawer's solution** [pytut](http://tinyurl.com/y2j3zqev)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+*/
+const a = 4, b = 3, c = 2;
 
----
+const expected = b % c - a ** c / b;
+
+// break down this expression
+console.log(expected);
+val_1 = b % c;
+step_1 = val_1 - a**c/b;
+console.assert(step_1 === expected, "step_1");
+
+val_2 = a **c;
+step_2 = val_1 - val_2/b;
+console.assert(step_2 === expected, "step_2");
+
+val_3 = b;
+step_3= val_1 - val_2 / val_3;
+console.assert(step_3 === expected, "step_3");
+
+val_4= val_1 - val_2 / val_3;
+step_4 = val_4;
+console.assert(step_4 === expected, "step_4");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
 
 ## All Primitive Operators
 
@@ -305,7 +551,38 @@ console.assert(step_3 === expected, "step_3");
   // break down this expression
 }
 ```
+   * **codelawer's solution** [pytut](http://tinyurl.com/y4docbsl)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+  0, 3
+  1, 3
+  2, 3
+  3, 3
+  4, 3
+*/
+const a = 3 , b =3 ;
 
+const expected = a % b || !!a;
+
+// break down this expression
+
+let val_1 = a % b;
+let step_1 = val_1 || !!a;
+console.assert (step_1 === expected, "step_1");
+
+let val_2 = !!a;
+let step_2 = val_1 || val_2;
+console.assert(step_2 === expected, "step_2");
+
+let val_3 = val_1 || val_2;
+let step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+ 
 ### all primitive operators 2
 
 
@@ -326,6 +603,39 @@ console.assert(step_3 === expected, "step_3");
 }
 ```
 
+   * **codelawer's solution** [pytut](http://tinyurl.com/yxskpcgc)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1;
+
+const expected = typeof a === 'number' + a;
+
+// break down this expression
+
+let val_1 = typeof a;
+let step_1 = val_1 === 'number' + a;
+console.assert(step_1 === expected, "step_1");
+
+let val_2 = 'number';
+let step_2 = val_2 === val_2 + a;
+console.assert(step_2 === expected, "step_2");
+
+let val_3 = a;
+let step_3 = val_1 === val_2 + val_3;
+console.assert(step_3 === expected, "step_3");
+
+let val_4 = val_1 === val_2 + val_3;
+let step_4 = val_4;
+console.assert(step_4 === expected, "step_4");
+
+   ```
+   [TOP](#Operator_Precedence)
+ ___
+
 ### all primitive operators 3
 
 
@@ -345,10 +655,33 @@ console.assert(step_3 === expected, "step_3");
 }
 ```
 
+   * **codelawer's solution** [pytut](http://tinyurl.com/y4rdnb2y)
+   
+   ```js
+   /* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a =0 ;
 
-[TOP](#operator-precedence)
+const expected = !!+a === Boolean(a);
 
----
+// break down this expression
+
+let val_1 = !!+a;
+let step_1 = val_1 === Boolean(a);
+console.assert(step_1 === expected, "step_1");
+
+let val_2 = Boolean(a);
+let step_2 = val_1 === val_2;
+console.assert(step_2 === expected, "step_2");
+
+let val_3 = val_1 === val_2;
+let step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
+
+   ```
+   [TOP](#Operator_Precedence)
+ ___
 
 ## Resources
 
@@ -363,7 +696,10 @@ console.assert(step_3 === expected, "step_3");
     * using this for anything but just expressions will likely be more confusing than helpful
     * this tool doesn't check for syntax errors and doesn't run code, so keep it simple and just copy in the expression. no need for variable declarations
 
-
+ ## My Resources
+ 
+      * [Operator precedence - Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Operator_precedence)
+     * [Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Exponentiation)
 ___
 ___
 ### <a href="https://github.com/codelawer" target="_blank"><img src="http://tinyurl.com/y5a3eyoo" width="60" height="40"></img> codeLawer</a>

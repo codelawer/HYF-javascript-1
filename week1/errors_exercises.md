@@ -67,8 +67,8 @@ error message:
 Uncaught SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax
 
 the fix:
 ```js
@@ -78,7 +78,7 @@ the fix:
 let a = {b:3};
 let b = a.b;
 ```
-your notes: I don't understand what is the meaning of the `:`, `.`
+
 
 [TOP](#errors)
 
@@ -94,11 +94,13 @@ error message:
 ReferenceError: b is not defined
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax
 
 the fix:
 ```js
+let x = {b:'e'};
+let y = x.b;
 ```
 your notes:
 
@@ -210,7 +212,7 @@ your notes: added `()` brackets before `{}` curly brackets.
 ## improper nested quotes 1
 broken code:
 ```js
-let innerHtml = "<p>Click here to <a href=#Home>return home</a></p>";
+let innerHtml = "<p>Click here to <a href="Home">return home</a></p>";
 ```
 error message:
 ```
@@ -218,8 +220,8 @@ SyntaxError: Unexpected token ILLEGAL
 
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js

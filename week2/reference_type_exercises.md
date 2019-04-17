@@ -68,7 +68,7 @@ console.assert(reference_1[0] === reference_2[0]);
 ```
 
 
-  * **codelawer's solution**
+  * **codelawer's solution** [pytut](http://tinyurl.com/yxesv7ej)
 ```js 
   let value_1 = 5;
   let reference_1 = [];
@@ -82,7 +82,7 @@ console.assert(reference_1[0] === reference_2[0]);
   value_1 = 6; // write this line
   console.assert(value_1 !== value_2);  
     
-  reference_1 = [6]; // write this line
+  reference_1[0] = 1; // write this line
   console.assert(reference_1[0] === reference_2[0]);
 
   // remove the array from memory
@@ -218,29 +218,30 @@ console.assert(obj_3[1] === obj_2[key]);
 ```
   * **codelawer's solution**
 
-[pytut](http://tinyurl.com/y5g8x677)
+[pytut](http://tinyurl.com/yyemal49)
 
 ```js
-let arr_1=[]; // write this line
-let arr_2=[]; // write this line
+let arr_1 = [0, 1, 2]; // write this line
+let arr_2 = [0, 1, 2]; // write this line
 console.assert(arr_1 !== arr_2);
 console.assert(arr_1[1] === arr_2[1]);
 
 let key = 0;
 console.assert(arr_1[key] === arr_2[key]);
 
-arr_1.push(0, 1, 2); // write this line
-arr_2.push(0, 1, 2); // write this line
+arr_1[2]=1; // write this line
+arr_2[2]=1; // write this line
 console.assert(arr_1[arr_2[2]] === arr_2[arr_1[2]]);
 
-arr_1 = arr_2; // write this line
-let arr_3=[key]; // write this line
+arr_1=arr_2; // write this line
+let arr_3 = [0]; // write this line
 console.assert(arr_1 === arr_2);
 console.assert(arr_3 !== arr_1);
 console.assert(arr_3 !== arr_2);
 console.assert(arr_3[key] === arr_1[0]);
 
-let obj_2=[], obj_3=[]; // write this line
+let obj_3= ["" , 0]; // write this line
+let obj_2=[0]        // write this line
 console.assert(obj_3[1] === obj_2[key]);
 ```
 
@@ -375,7 +376,7 @@ console.assert(obj_3.x === obj_2[key]);
 ```
 * **codelawer's solution**
   
-[pytut](http://tinyurl.com/y5fv5j6x)
+[pytut](http://tinyurl.com/y5fv5j6x), [second](http://tinyurl.com/yyxvgpbt)
 
 ```js
 let obj_1= {}; // write this line
@@ -419,7 +420,7 @@ let _ = null;
 ```
 * **codelawer's solution**
   
-[pytut](http://tinyurl.com/yx947qq9)
+[pytut](http://tinyurl.com/yx947qq9) or [this](http://tinyurl.com/y6fj8nes)
 
 ```js
 const obj = {prop: "array"};

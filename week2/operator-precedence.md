@@ -331,9 +331,6 @@ console.assert(step_5 === expected, "step_5");
 ```
 [ast explorer](https://astexplorer.net/#/gist/bc0bac0e8559bf97071c9129a05a28f9/e5fcaa5df8317fb1a45ba1a7866733d96768c463)
 
-
-[TOP](#operator-precedence)
-
 ---
    * **codelawer's solution** [pytut](http://tinyurl.com/y4mb49xv)
    
@@ -698,8 +695,8 @@ console.assert(step_3 === expected, "step_3");
 
  ## My Resources
  
-      * [Operator precedence - Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Operator_precedence)
-     * [Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Exponentiation)
+* [Operator precedence - Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Operator_precedence)
+* [Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Exponentiation)
 ___
 ___
 ### <a href="https://github.com/codelawer" target="_blank"><img src="http://tinyurl.com/y5a3eyoo" width="60" height="40"></img> codeLawer</a>

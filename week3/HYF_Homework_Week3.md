@@ -73,7 +73,7 @@ console.log('The item you are looking for is at index: ' + favoriteAnimals.index
 ___
 ## More JavaScript
 
->1. Create a function that takes 3 arguments and returns the sum of the these arguments.
+1. Create a function that takes 3 arguments and returns the sum of the these arguments.
     
     ```js 
     function myFunction(param_1, param_2, param_3){
@@ -85,7 +85,7 @@ ___
     ```
  [TOP](#Homework_Week_3)
 ___
->2. Create a function named `colorCar` that receives a color, and prints out, _'a red car'_ for example.
+2. Create a function named `colorCar` that receives a color, and prints out, _'a red car'_ for example.
 
 ```js 
 function colorCar (color) {
@@ -97,7 +97,7 @@ console.log(colorCar("red")); // a red car
 ```
  [TOP](#Homework_Week_3)
 ___
->3. Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
+3. Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
     * first method; [for more information](https://zellwk.com/blog/looping-through-js-objects/)
 ```js 
 function myFunction (object){
@@ -131,7 +131,7 @@ console.log(myFunction(myObject));
  ```
  [TOP](#Homework_Week_3)
 ___
->4. Create a function named `vehicleType` that receives a color, and a code, 1 for car, 2 for motorbike. And prints _'a blue motorbike'_ for example when called as `vehicleType("blue", 2)`
+4. Create a function named `vehicleType` that receives a color, and a code, 1 for car, 2 for motorbike. And prints _'a blue motorbike'_ for example when called as `vehicleType("blue", 2)`
 
 ```js 
 function vehicleType (color, code){  
@@ -157,7 +157,7 @@ console.log(vehicleType("blue", 2));
 
  [TOP](#Homework_Week_3)
 ___
-> 5. Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
+5. Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
 
    ```js
    if (3 === 3) {
@@ -173,7 +173,7 @@ ___
  ```
 [TOP](#Homework_Week_3)
 ___
-> 6. Create a function called `vehicle`, like before, but takes another parameter called `age`, so that `vehicle("blue", 1, 5)` prints _'a blue used car'_
+6. Create a function called `vehicle`, like before, but takes another parameter called `age`, so that `vehicle("blue", 1, 5)` prints _'a blue used car'_
 
 ```js 
 function vehicleType (color, code, age){  
@@ -194,7 +194,7 @@ function vehicleType (color, code, age){
 }
 console.log(vehicleType("blue", 1, 1));
 ```
-
+7.8.9.
  >7. Make a list of vehicles, you can add `"motorbike"`, `"caravan"`, `"bike"`, or more.
  >8. How do you get the third element from that list?
  >9. Change the function `vehicle` to use the list of question 7. So that `vehicle("green", 3, 1)` prints "a green new bike".
@@ -223,7 +223,8 @@ console.log(vehicleType(2, 3, 1));
   
  [TOP](#Homework_Week_3)
 ___
-  10. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
+ 
+   10. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
 
     > Hint, the output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
 
@@ -231,11 +232,15 @@ ___
 
  [TOP](#Homework_Week_3)
 ___
-12. Create an empty object.
-
-13. Create an object that contains the teachers that you have had so far for the different modules.
-
-14. Add a property to the object you just created that contains the languages that they have taught you.
+12.13.14
+>12. Create an empty object.
+>13. Create an object that contains the teachers that you have had so far for the different modules.
+>14. Add a property to the object you just created that contains the languages that they have taught you.
+ 
+ * **solution** [pytut]()
+ ```js
+ 
+ ```
 
  [TOP](#Homework_Week_3)
 ___
@@ -271,8 +276,7 @@ console.assert(z !== x, "they are not equal")
 
    More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
     
-    `Special note. It is easy to understand. Thanks to this repo:` 
-[colevandersWands](https://github.com/colevandersWands/reference-type-exercises)  
+    `Special note. It is easy to understand. Thanks to this repo: https://github.com/colevandersWands/reference-type-exercises`  
     
  [TOP](#Homework_Week_3)
 ___
@@ -286,11 +290,12 @@ ___
     ```
 
 >   Show that changing `o2` changes `o3` (or not) and changing `o1` changes `o3`(or not).
+   
    **Answer:** `It is easy task. For detailed understanding please look at this repo.`[colevandersWands](https://github.com/colevandersWands/reference-type-exercises) 
 
 >   Does the order that you assign (`o3 = o2` or `o2 = o3`) matter?
     
-  **Answer:** `of course matter. because we first declare the `o3` at the third step.` 
+  **Answer:** `of course matter. because we first declare the 'o3' at the third step.` 
  
  
 [TOP](#Homework_Week_3)

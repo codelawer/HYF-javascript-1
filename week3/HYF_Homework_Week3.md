@@ -83,6 +83,7 @@ ___
     let arg_1 = 5, arg_2 = 10, arg_3 = 15;
     console.log(myFunction(arg_1, arg_2, arg_3)); //30
     ```
+ [TOP](#Homework_Week_3)
 ___
 >2. Create a function named `colorCar` that receives a color, and prints out, _'a red car'_ for example.
 
@@ -94,6 +95,7 @@ function colorCar (color) {
 console.log(colorCar("red")); // a red car
   
 ```
+ [TOP](#Homework_Week_3)
 ___
 >3. Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
     * first method; [for more information](https://zellwk.com/blog/looping-through-js-objects/)
@@ -127,7 +129,7 @@ let myObject = {
 
 console.log(myFunction(myObject));
  ```
-    
+ [TOP](#Homework_Week_3)
 ___
 >4. Create a function named `vehicleType` that receives a color, and a code, 1 for car, 2 for motorbike. And prints _'a blue motorbike'_ for example when called as `vehicleType("blue", 2)`
 
@@ -153,7 +155,8 @@ console.log(vehicleType("blue", 2));
 ```
 
 
-
+ [TOP](#Homework_Week_3)
+___
 > 5. Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
 
    ```js
@@ -192,24 +195,50 @@ function vehicleType (color, code, age){
 console.log(vehicleType("blue", 1, 1));
 ```
 
-7. Make a list of vehicles, you can add `"motorbike"`, `"caravan"`, `"bike"`, or more.
-
-8. How do you get the third element from that list?
-
-9. Change the function `vehicle` to use the list of question 7. So that `vehicle("green", 3, 1)` prints "a green new bike".
-
-10. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
+ >7. Make a list of vehicles, you can add `"motorbike"`, `"caravan"`, `"bike"`, or more.
+ >8. How do you get the third element from that list?
+ >9. Change the function `vehicle` to use the list of question 7. So that `vehicle("green", 3, 1)` prints "a green new bike".
+  
+  * Solution [pytut](http://tinyurl.com/y2xvbx7u)
+  ```js 
+  function vehicleType (color, code, age){  
+  
+  let vehicle = ["motorbike", "caravan", "bike"];
+  function callVehicle(code){
+    let results = code = vehicle[code-1];
+    return results
+  }
+  let colors = ["blue", "red", "green", "yellow"];
+  function callColor(color){
+    let results = color = colors[color-1];
+    return results
+    };
+    age>0 ? age = "used" : age = "new";
+    let result = `a ${callColor(color)} and ${age} ${callVehicle(code)}`
+    return result
+    
+}
+console.log(vehicleType(2, 3, 1));
+  ```
+  
+ [TOP](#Homework_Week_3)
+___
+  10. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
 
     > Hint, the output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
 
 11. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
 
+ [TOP](#Homework_Week_3)
+___
 12. Create an empty object.
 
 13. Create an object that contains the teachers that you have had so far for the different modules.
 
 14. Add a property to the object you just created that contains the languages that they have taught you.
 
+ [TOP](#Homework_Week_3)
+___
 15. Write some code to test two arrays for equality using `==` and `===`. Test the following:
 
     ```js
@@ -220,12 +249,33 @@ console.log(vehicleType("blue", 1, 1));
 
     What do you think will happen with `x == y`, `x === y` and `z == y` and `z == x`? Prove it!
 
-    > Don't cheat! Seriously - try it first.
+   * **solution** [pytut](http://tinyurl.com/yx9y9y3q)
+```js 
+let x = [1, 2, 3];
+let y = [1, 2, 3];
+let z = y;
 
+//x==y // false
+//x === y // also false
+console.assert(x !== y, "x and y different arrays");
 
-    Check out this [Fiddle](http://jsfiddle.net/jimschubert/85M4z/). You need to open your browser’s Developer Tools to see the console output. Press the Run button in the upper right corner to run the code.
+//z == y // true
+console.assert(z == y, "they should be the same")
 
-    More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
+//z == x // false
+console.assert(z !== x, "they are not equal")
+
+```
+
+   Check out this [Fiddle](http://jsfiddle.net/jimschubert/85M4z/). You need to open your browser’s Developer Tools to see the console output. Press the Run button in the upper right corner to run the code.
+
+   More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
+    
+    `Special note. It is easy to understand. Thanks to this repo:` 
+[colevandersWands](https://github.com/colevandersWands/reference-type-exercises)  
+    
+ [TOP](#Homework_Week_3)
+___
 
 > 16. Take a look at the following code:
 
@@ -235,13 +285,14 @@ console.log(vehicleType("blue", 1, 1));
     let o3 = o2;
     ```
 
-    Show that changing `o2` changes `o3` (or not) and changing `o1` changes `o3`(or not).
+>   Show that changing `o2` changes `o3` (or not) and changing `o1` changes `o3`(or not).
+   **Answer:** `It is easy task. For detailed understanding please look at this repo.`[colevandersWands](https://github.com/colevandersWands/reference-type-exercises) 
 
-    Does the order that you assign (`o3 = o2` or `o2 = o3`) matter?
+>   Does the order that you assign (`o3 = o2` or `o2 = o3`) matter?
     
-   * **codelawer's solution** : [pytut](http://tinyurl.com/y45wb3o2)
- ```js
- ```
+  **Answer:** `of course matter. because we first declare the `o3` at the third step.` 
+ 
+ 
 [TOP](#Homework_Week_3)
 ___
 
@@ -254,8 +305,11 @@ ___
 
 > ‘Coerce' means to try to change - so coercing `var x = '6'` to number means trying to change the type to number temporarily.
 
-* **codelawer's solution** : [pytut](http://tinyurl.com/y45wb3o2)
+* **codelawer's solution** : [pytut]()
  ```js
+ let bar = 42;
+console.log(typeof bar); // number
+console.log(typeof typeof bar); // string
  ```
 [TOP](#Homework_Week_3)
 ___

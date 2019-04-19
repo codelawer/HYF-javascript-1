@@ -217,6 +217,9 @@ console.assert(step_4 === expected, "step_4");
   console.assert(step_3 === expected, "step_3"); 
 }
 ```
+___
+ **FIRST TRIAL**
+ 
    * **codelawer's solution** [pytut](http://tinyurl.com/yyx8qc4u)
    
    ```js
@@ -239,6 +242,26 @@ const val_3 = val_1 == val_2;
 const step_3 = val_3 ;
 console.assert(step_3 === expected, "step_3");
    ```
+  ___
+ 
+ **SECOND TRIAL (I'm not sure)**
+  
+   
+   ```js
+   
+  const val_1 =a;
+  const step_1 = !(val_1 && !b);
+  console.assert(step_1 === expected, "step_1");
+
+  const val_2 = !b;
+  const step_2 = !(val_1 && val_2);
+  console.assert(step_2 === expected, "step_2");
+
+  const val_3 = !(val_1 && val_2);
+  const step_3 = val_3;
+  console.assert(step_3 === expected, "step_3"); 
+   ```
+   
    [TOP](#Operator_Precedence)
  ___
  
@@ -278,9 +301,11 @@ console.assert(step_3 === expected, "step_3");
   console.assert(step_5 === expected, "step_5"); 
 }
 ```
-   * **codelawer's solution** [pytut](http://tinyurl.com/y3lyakbf)
-   
-   ```js
+___
+ **FIRST TRIAL**
+  * **codelawer's solution** [pytut](http://tinyurl.com/y3lyakbf) 
+ 
+ ```js
    /* values to try
   "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
 */
@@ -308,6 +333,40 @@ const val_5 = val_4 !== val_1;
 const step_5 = val_5;
 console.assert(step_5 === expected, "step_5");
    ```
+___
+  **SECOND TRIAL**
+  
+  * **codelawer's solution** [pytut]( http://tinyurl.com/y2jffcg2) 
+  
+  ```js
+  const a = 0, b = 1;
+
+const expected = !!a || !!b;
+
+const val_1 = a;
+const step_1 = !!(val_1) || !!b;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = !!val_1;
+const step_2 = val_2 || !!b;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = b;
+const step_3 = val_2 || !!(val_3);
+console.assert(step_3 === expected, "step_3"); 
+
+const val_4 = !!val_3;
+const step_4 = val_2 ||val_4;
+console.assert(step_4 === expected, "step_4");
+
+const val_5 = val_2 || val_4;
+const step_5 = val_5;
+console.assert(step_5 === expected, "step_5");
+  ```
+  ___
+  
+   
+   
    [TOP](#Operator_Precedence)
  ___
  
@@ -331,7 +390,9 @@ console.assert(step_5 === expected, "step_5");
 ```
 [ast explorer](https://astexplorer.net/#/gist/bc0bac0e8559bf97071c9129a05a28f9/e5fcaa5df8317fb1a45ba1a7866733d96768c463)
 
----
+
+___
+ **FIRST TRIAL**
    * **codelawer's solution** [pytut](http://tinyurl.com/y4mb49xv)
    
    ```js
@@ -360,7 +421,26 @@ const val_4 = val_3;
 const step_4 = val_3;
 console.assert(step_4 === expected, "step_4");
    ```
-   
+___
+ **SECOND TRIAL**
+   * **codelawer's solution** [pytut](http://tinyurl.com/y284283m)
+   ```js
+  const a = 1, b =false , c =null ;
+
+  const expected = a || b && c || a;
+
+  const val_1 = a;
+  const step_1 = val_1 || b&&c || val_1;
+  console.assert(step_1 === expected, "try again");
+
+  const val_2 = b && c;
+  const step_2 = val_1 || val_2 || val_1;
+  console.assert(step_2 === expected, "try again");
+
+  const val_3 = val_1 || val_2 || val_1;
+  const step_3 = val_3;
+  console.assert(step_3 === expected, "try again")
+   ```
 
 
    [TOP](#Operator_Precedence)
@@ -398,6 +478,9 @@ console.assert(step_3 === expected, "step_3");
 ```
 [scientific notation](http://www.java2s.com/Tutorials/Javascript/Javascript_Tutorial/Data_Type/How_to_write_Scientific_notation_literal_in_Javascript.htm)
 
+___
+ **FIRST TRIAL**
+ 
    * **codelawer's solution** [pytut](http://tinyurl.com/yylabgnv)
    
    ```js
@@ -420,6 +503,27 @@ const val_3 = val_1 *val_2;
 const step_3 =val_3 ;
 console.assert(step_3 === expected, "step_3");
    ```
+ ___
+ **SECOND TRIAL**
+ * **codelawer's solution** [pytut](http://tinyurl.com/y6albzd2)
+```js
+const a = 1, b =2 , c =3 ;
+
+const expected = -(a + b) * c;
+
+const val_1 = a+b ;
+const step_1 = -val_1 * c;
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = -val_1;
+const step_2 = val_2 *c;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_2 *c;
+const step_3 =val_3 ;
+console.assert(step_3 === expected, "step_3");
+  ```
+   
    [TOP](#Operator_Precedence)
  ___
  
@@ -441,6 +545,8 @@ console.assert(step_3 === expected, "step_3");
   // break down this expression 
 }
 ```
+ ___
+ **FIRST TRIAL**
    * **codelawer's solution** [pytut](http://tinyurl.com/y27fl3yx)
    
    ```js
@@ -470,6 +576,32 @@ console.assert(step_4 === expected, "step_4");
 
 
    ```
+  ___
+ **SECOND TRIAL**
+ * **codelawer's solution** [pytut](http://tinyurl.com/y6n5rxxk)
+```js 
+/* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+*/
+const a =2 , b =3 , c =-2 ;
+
+const expected = a ** b / +c;
+
+// break down this expression
+const val_1 = a**b;
+const step_1 = val_1 / +c
+console.assert(step_1 === expected, "step_1");
+
+const val_2 = c;
+const step_2 = val_1 / +val_2;
+console.assert(step_2 === expected, "step_2");
+
+const val_3 = val_1 / +val_2;
+const step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
+```
+   
+   
    [TOP](#Operator_Precedence)
  ___
  
@@ -491,7 +623,9 @@ console.assert(step_4 === expected, "step_4");
   // break down this expression
 }
 ```
-
+ ___
+ **FIRST TRIAL**
+ 
    * **codelawer's solution** [pytut](http://tinyurl.com/y2j3zqev)
    
    ```js
@@ -520,9 +654,33 @@ val_4= val_1 - val_2 / val_3;
 step_4 = val_4;
 console.assert(step_4 === expected, "step_4");
    ```
-   [TOP](#Operator_Precedence)
- ___
+___
+ **SECOND TRIAL**
+    * **codelawer's solution** [pytut](http://tinyurl.com/yywuqou2)
+    
+ ```js
+const a = 8, b =3 , c = 2;
 
+const expected = b % c - a ** c / b;
+
+const val_1 = b%c;
+const step_1 = val_1 - a ** c / b;
+console.assert(step_1 === expected, "step_1")
+
+const val_2 = a**c;
+const step_2= val_1 - val_2 /b;
+console.assert(step_2 === expected, "step_2")
+
+const val_3 = val_2/b;
+const step_3 = val_1 - val_3;
+console.assert(step_3 === expected, "step_3")
+
+const val_4 = val_1 - val_3;
+const step_4 = val_4;
+console.assert(step_4 === expected, "step_4")
+   ```
+   [TOP](#Operator_Precedence)
+___
 ## All Primitive Operators
 
 ### all primitive operators 1
@@ -548,6 +706,8 @@ console.assert(step_4 === expected, "step_4");
   // break down this expression
 }
 ```
+ ___
+ **FIRST TRIAL**
    * **codelawer's solution** [pytut](http://tinyurl.com/y4docbsl)
    
    ```js
@@ -577,6 +737,34 @@ let val_3 = val_1 || val_2;
 let step_3 = val_3;
 console.assert(step_3 === expected, "step_3");
    ```
+   
+ ___
+ **SECOND TRIAL**
+   * **codelawer's solution** [pytut](http://tinyurl.com/yygzobvc)
+   ```js
+const a = 3 , b =3 ;
+
+const expected = a % b || !!a;
+
+// break down this expression
+
+let val_1 = a % b;
+let step_1 = val_1 || !!a;
+console.assert (step_1 === expected, "step_1");
+
+let val_2 = a;
+let step_2 = val_1 || !!val_2;
+console.assert(step_2 === expected, "step_2");
+
+let val_3 = !!val_2;
+let step_3 = val_1 || val_3;
+console.assert(step_3 === expected, "step_3");
+
+let val_4 = val_1 || val_3;
+let step_4= val_4;
+console.assert(step_4 === expected, "step_4");
+   
+   ```
    [TOP](#Operator_Precedence)
  ___
  
@@ -599,9 +787,9 @@ console.assert(step_3 === expected, "step_3");
   // break down this expression
 }
 ```
-
+___ 
+**FIRST TRIAL**
    * **codelawer's solution** [pytut](http://tinyurl.com/yxskpcgc)
-   
    ```js
    /* values to try
   0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
@@ -629,6 +817,34 @@ let val_4 = val_1 === val_2 + val_3;
 let step_4 = val_4;
 console.assert(step_4 === expected, "step_4");
 
+   ```
+   
+___
+ **SECOND TRIAL**
+  * **codelawer's solution** [pytut](http://tinyurl.com/y27epdg4)
+   
+   ```js
+   /* values to try
+  0, 1, -1, NaN, Infinity, .5, -0.0, 1e3, 1e-3, 999e305, 999e306
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1;
+
+const expected = typeof a === 'number' + a;
+
+// break down this expression
+
+let val_1 = typeof a;
+let step_1 = val_1 === 'number' + a;
+console.assert(step_1 === expected, "step_1");
+
+let val_2 = 'number' + a;
+let step_2 = val_1 === val_2;
+console.assert(step_2 === expected, "step_2");
+
+let val_3 = val_1 === val_2;
+let step_3 = val_3;
+console.assert(step_3 === expected, "step_3");
    ```
    [TOP](#Operator_Precedence)
  ___
